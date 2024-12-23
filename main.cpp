@@ -1,6 +1,4 @@
 #include "ADT.h"
-#include <chrono>
-#include <iomanip>
 using namespace std;
 
 int main()
@@ -83,7 +81,6 @@ int main()
     cout << "Pilih cara mencari player (1.iteratif / 2.rekursif)" << endl;
     cin >> PilihCara;
     cout << "Pilih metode pencarian Player (1. sequential / 2. binary)" << endl;
-    auto start = chrono::high_resolution_clock::now();
     cin >> PilihCara2;
 
     if (PilihCara == 1) {
@@ -112,9 +109,6 @@ int main()
         result = {-1," ",-1};
     }
 
-    auto end = chrono::high_resolution_clock::now();
-    chrono::duration<double, std::milli> elapsed = end - start;
-
     if (result.Id != -1) {
         cout << "Pemain Rekomendasi: " << endl;
         cout << "Nama Pemain: " << result.name << endl;
@@ -123,6 +117,5 @@ int main()
         cout << "Pemain tidak ditemukan." << endl;
     }
 
-    cout << "Waktu eksekusi: " << fixed << setprecision(6) << elapsed.count() << " ms" << endl;
     return 0;
 }
