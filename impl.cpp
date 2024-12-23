@@ -123,7 +123,6 @@ void init_players_1(Players &DataPemain){
 
 }
 
-
 void init_players_2(Players &DataPemain){
     DataPemain.ID[10] = 11; DataPemain.nama[10] = "Lautaro Javier Martínez"; DataPemain.role[10] = role[14]; DataPemain.Overall[10] = 88; DataPemain.value[10] = 116000000;
     DataPemain.ID[11] = 12; DataPemain.nama[11] = "Khvicha Kvaratskhelia"; DataPemain.role[11] = role[11]; DataPemain.Overall[11] = 86; DataPemain.value[11] = 109000000;
@@ -218,56 +217,6 @@ void init_players_2(Players &DataPemain){
 }
 
 void init_players_3(Players &DataPemain){
-    DataPemain.ID[50] = 51; DataPemain.nama[50] = "Alisson Ramsés Becker"; DataPemain.role[50] = role[0]; DataPemain.Overall[50] = 89; DataPemain.value[50] = 68500000;
-    DataPemain.ID[51] = 52; DataPemain.nama[51] = "Casemiro"; DataPemain.role[51] = role[6]; DataPemain.Overall[ 51] = 84; DataPemain.value[51] = 68000000;
-    DataPemain.ID[52] = 53; DataPemain.nama[52] = "Rafael Leão"; DataPemain.role[52] = role[11]; DataPemain.Overall[52] = 84; DataPemain.value[52] = 68000000;
-    DataPemain.ID[53] = 54; DataPemain.nama[53] = "Paulo Dybala"; DataPemain.role[53] = role[13]; DataPemain.Overall[53] = 86; DataPemain.value[53] = 68000000;
-    DataPemain.ID[54] = 55; DataPemain.nama[54] = "Sergej Milinković-Savić"; DataPemain.role[54] = role[7]; DataPemain.Overall[54] = 86; DataPemain.value[54] = 68000000;
-    DataPemain.ID[55] = 56; DataPemain.nama[55] = "Matthijs de Ligt"; DataPemain.role[55] = role[1]; DataPemain.Overall[55] = 84; DataPemain.value[55] = 67000000;
-    DataPemain.ID[56] = 57; DataPemain.nama[56] = "Declan Rice"; DataPemain.role[56] = role[6]; DataPemain.Overall[56] = 84; DataPemain.value[56] = 67000000;
-    DataPemain.ID[57] = 58; DataPemain.nama[57] = "Marcos Aoás Corrêa"; DataPemain.role[57] = role[1]; DataPemain.Overall[57] = 87; DataPemain.value[57] = 66500000;
-    DataPemain.ID[58] = 59; DataPemain.nama[58] = "Theo Hernández"; DataPemain.role[58] = role[4]; DataPemain.Overall[58] = 85; DataPemain.value[58] = 66000000;
-    DataPemain.ID[59] = 60; DataPemain.nama[59] = "Hakan Çalhanoğlu"; DataPemain.role[59] = role[7]; DataPemain.Overall[59] = 86; DataPemain.value[59] = 66000000;
-    DataPemain.ID[60] = 61; DataPemain.nama[60] = "Alejandro Grimaldo García"; DataPemain.role[60] = role[5]; DataPemain.Overall[60] = 86; DataPemain.value[60] = 65500000;
-    DataPemain.ID[61] = 62; DataPemain.nama[61] = "Rodrygo Goes"; DataPemain.role[61] = role[11]; DataPemain.Overall[61] = 84; DataPemain.value[61] = 65000000;
-    DataPemain.ID[62] = 63; DataPemain.nama[62] = "Christopher Nkunku"; DataPemain.role[62] = role[10]; DataPemain.Overall[62] = 84; DataPemain.value[62] = 65000000;
-    DataPemain.ID[63] = 64; DataPemain.nama[63] = "Diogo José Teixeira da Silva"; DataPemain.role[63] = role[13]; DataPemain.Overall[63] = 85; DataPemain.value[63] = 64500000;
-    DataPemain.ID[64] = 65; DataPemain.nama[64] = "Dusan Vlahović"; DataPemain.role[64] = role[14]; DataPemain.Overall[64] = 84; DataPemain.value[64] = 64000000;
-    DataPemain.ID[65] = 66; DataPemain.nama[65] = "James Maddison"; DataPemain.role[65] = role[10]; DataPemain.Overall[65] = 85; DataPemain.value[65] = 63500000;
-    DataPemain.ID[66] = 67; DataPemain.nama[66] = "Thibaut Nicolas Marc Courtois"; DataPemain.role[66] = role[0]; DataPemain.Overall[66] = 90; DataPemain.value[66] = 63000000;
-    DataPemain.ID[67] = 68; DataPemain.nama[67] = "Gleison Bremer Silva Nascimento"; DataPemain.role[67] = role[1]; DataPemain.Overall[67] = 85; DataPemain.value[67] = 62500000;
-    DataPemain.ID[68] = 69; DataPemain.nama[68] = "Declan Rice"; DataPemain.role[68] = role[6]; DataPemain.Overall[68] = 84; DataPemain.value[68] = 62000000;
-    DataPemain.ID[69] = 70; DataPemain.nama[69] = "João Félix"; DataPemain.role[69] = role[10]; DataPemain.Overall[69] = 84; DataPemain.value[69] = 62000000;
-    DataPemain.ID[70] = 71; DataPemain.nama[70] = "Lautaro Martínez"; DataPemain.role[70] = role[14]; DataPemain.Overall[70] = 84; DataPemain.value[70] = 62000000;
-    DataPemain.ID[71] = 72; DataPemain.nama[71] = "Nicolo Barella"; DataPemain.role[71] = role[7]; DataPemain.Overall[71] = 84; DataPemain.value[71] = 62000000;
-    DataPemain.ID[72] = 73; DataPemain.nama[72] = "Bukayo Saka"; DataPemain.role[72] = role[11]; DataPemain.Overall[72] = 84; DataPemain.value[72] = 62000000;
-    DataPemain.ID[73] = 74; DataPemain.nama[73] = "Gabriel Teodoro Martinelli Silva"; DataPemain.role[73] = role[12]; DataPemain.Overall[73] = 84; DataPemain.value[73] = 61500000;
-    DataPemain.ID[74] = 75; DataPemain.nama[74] = "Jules Koundé"; DataPemain.role[74] = role[1]; DataPemain.Overall[74] = 84; DataPemain.value[74] = 61000000;
-    DataPemain.ID[75] = 76; DataPemain.nama[75] = "João Cancelo"; DataPemain.role[75] = role[5]; DataPemain.Overall[75] = 84; DataPemain.value[75] = 61000000;
-    DataPemain.ID[76] = 77; DataPemain.nama[76] = "Dušan Vlahović"; DataPemain.role[76] = role[14]; DataPemain.Overall[76] = 84; DataPemain.value[76] = 61000000;
-    DataPemain.ID[77] = 78; DataPemain.nama[77] = "Jan Oblak"; DataPemain.role[77] = role[0]; DataPemain.Overall[77] = 88; DataPemain.value[77] = 61000000;
-    DataPemain.ID[78] = 79; DataPemain.nama[78] = "Xavi Simons"; DataPemain.role[78] = role[10]; DataPemain.Overall[78] = 82; DataPemain.value[78] = 60500000;
-    DataPemain.ID[79] = 80; DataPemain.nama[79] = "Federico Chiesa"; DataPemain.role[79] = role[11]; DataPemain.Overall[79] = 84; DataPemain.value[79] = 60000000;
-    DataPemain.ID[80] = 81; DataPemain.nama[80] = "Gabriel dos S. Magalhães"; DataPemain.role[80] = role[1]; DataPemain.Overall[80] = 85; DataPemain.value[80] = 60000000;
-    DataPemain.ID[81] = 82; DataPemain.nama[81] = "João Pedro Cavaco Cancelo"; DataPemain.role[81] =role[2]; DataPemain.Overall[81] = 86; DataPemain.value[81] = 59500000;
-    DataPemain.ID[82] = 83; DataPemain.nama[82] = "Andrew Robertson"; DataPemain.role[82] = role[4]; DataPemain.Overall[82] = 86; DataPemain.value[82] = 59500000;
-    DataPemain.ID[83] = 84; DataPemain.nama[83] = "Aurélien Tchouaméni"; DataPemain.role[83] = role[6]; DataPemain.Overall[83] = 84; DataPemain.value[83] = 58500000;
-    DataPemain.ID[84] = 85; DataPemain.nama[84] = "Loïs Openda"; DataPemain.role[84] = role[14]; DataPemain.Overall[84] = 84; DataPemain.value[84] = 58500000;
-    DataPemain.ID[85] = 86; DataPemain.nama[85] = "Gabriel Martinelli"; DataPemain.role[85] = role[11]; DataPemain.Overall[85] = 84; DataPemain.value[85] = 58000000;
-    DataPemain.ID[86] = 87; DataPemain.nama[86] = "Robert Lewandowski"; DataPemain.role[86] = role[14]; DataPemain.Overall[86] = 90; DataPemain.value[86] = 58000000;
-    DataPemain.ID[87] = 88; DataPemain.nama[87] = "Jack Grealish"; DataPemain.role[87] = role[12]; DataPemain.Overall[87] = 85; DataPemain.value[87] = 57500000;
-    DataPemain.ID[88] = 89; DataPemain.nama[88] = "Kingsley Coman"; DataPemain.role[88] = role[8]; DataPemain.Overall[88] = 85; DataPemain.value[88] = 57500000;
-    DataPemain.ID[89] = 90; DataPemain.nama[89] = "Jonathan David"; DataPemain.role[89] = role[14]; DataPemain.Overall[89] = 84; DataPemain.value[89] = 57000000;
-    DataPemain.ID[90] = 91; DataPemain.nama[90] = "Martin Ødegaard"; DataPemain.role[90] = role[10]; DataPemain.Overall[90] = 84; DataPemain.value[90] = 57000000;
-    DataPemain.ID[91] = 92; DataPemain.nama[91] = "Jeremie Frimpong"; DataPemain.role[91] = role[3]; DataPemain.Overall[91] = 84; DataPemain.value[91] = 57000000;
-    DataPemain.ID[92] = 93; DataPemain.nama[92] = "Kim Min-Jae"; DataPemain.role[92] = role[1]; DataPemain.Overall[92] = 84; DataPemain.value[92] = 56000000;
-    DataPemain.ID[93] = 94; DataPemain.nama[93] = "Darwin Núñez"; DataPemain.role[93] = role[14]; DataPemain.Overall[93] = 84; DataPemain.value[93] = 56000000;
-    DataPemain.ID[94] = 95; DataPemain.nama[94] = "Sandro Tonali"; DataPemain.role[94] = role[6]; DataPemain.Overall[94] = 84; DataPemain.value[94] = 56000000;
-    DataPemain.ID[95] = 96; DataPemain.nama[95] = "Bruno Guimarães Moura"; DataPemain.role[95] = role[7]; DataPemain.Overall[95] = 84; DataPemain.value[95] = 55500000;
-    DataPemain.ID[96] = 97; DataPemain.nama[96] = "Antonio Rüdiger"; DataPemain.role[96] = role[1]; DataPemain.Overall[96] = 86; DataPemain.value[96] = 55500000;
-    DataPemain.ID[97] = 98; DataPemain.nama[97] = "Éder Militão"; DataPemain.role[97] = role[1]; DataPemain.Overall[97] = 84; DataPemain.value[97] = 55000000;
-    DataPemain.ID[98] = 99; DataPemain.nama[98] = "Domenico Berardi"; DataPemain.role[98] = role[11]; DataPemain.Overall[98] = 85; DataPemain.value[98] = 54500000;
-    DataPemain.ID[99] = 100; DataPemain.nama[99] = "Marc-André ter Stegen"; DataPemain.role[99] = role[0]; DataPemain.Overall[99] = 89; DataPemain.value[99] = 54500000;
     DataPemain.ID[100] = 101; DataPemain.nama[100] = "Sandro Tonali"; DataPemain.role[100] = role[6]; DataPemain.Overall[100] = 84; DataPemain.value[100] = 54000000;
     DataPemain.ID[101] = 102; DataPemain.nama[101] = "Dayot Upamecano"; DataPemain.role[101] = role[1]; DataPemain.Overall[101] = 84; DataPemain.value[101] = 54000000;
     DataPemain.ID[102] = 103; DataPemain.nama[102] = "Raphinha Dias Belloli"; DataPemain.role[102] = role[11]; DataPemain.Overall[102] = 84; DataPemain.value[102] = 54000000;
