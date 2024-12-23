@@ -164,6 +164,10 @@ void init_players_2(Players &DataPemain){
     DataPemain.ID[47] = 48; DataPemain.nama[47] = "Ederson Santana de Moraes"; DataPemain.role[47] = role[0]; DataPemain.Overall[47] = 88; DataPemain.value[47] = 70000000;
     DataPemain.ID[48] = 49; DataPemain.nama[48] = "Jules Koundé"; DataPemain.role[48] = role[1]; DataPemain.Overall[48] = 85; DataPemain.value[48] = 69500000;
     DataPemain.ID[49] = 50; DataPemain.nama[49] = "Christopher Nkunku"; DataPemain.role[49] = role[13]; DataPemain.Overall[49] = 85; DataPemain.value[49] = 68500000;
+
+}
+
+void init_players_3(Players &DataPemain){
     DataPemain.ID[50] = 51; DataPemain.nama[50] = "Alisson Ramsés Becker"; DataPemain.role[50] = role[0]; DataPemain.Overall[50] = 89; DataPemain.value[50] = 68500000;
     DataPemain.ID[51] = 52; DataPemain.nama[51] = "Casemiro"; DataPemain.role[51] = role[6]; DataPemain.Overall[ 51] = 84; DataPemain.value[51] = 68000000;
     DataPemain.ID[52] = 53; DataPemain.nama[52] = "Rafael Leão"; DataPemain.role[52] = role[11]; DataPemain.Overall[52] = 84; DataPemain.value[52] = 68000000;
@@ -216,7 +220,7 @@ void init_players_2(Players &DataPemain){
     DataPemain.ID[99] = 100; DataPemain.nama[99] = "Marc-André ter Stegen"; DataPemain.role[99] = role[0]; DataPemain.Overall[99] = 89; DataPemain.value[99] = 54500000;
 }
 
-void init_players_3(Players &DataPemain){
+void init_players_4(Players &DataPemain){
     DataPemain.ID[100] = 101; DataPemain.nama[100] = "Sandro Tonali"; DataPemain.role[100] = role[6]; DataPemain.Overall[100] = 84; DataPemain.value[100] = 54000000;
     DataPemain.ID[101] = 102; DataPemain.nama[101] = "Dayot Upamecano"; DataPemain.role[101] = role[1]; DataPemain.Overall[101] = 84; DataPemain.value[101] = 54000000;
     DataPemain.ID[102] = 103; DataPemain.nama[102] = "Raphinha Dias Belloli"; DataPemain.role[102] = role[11]; DataPemain.Overall[102] = 84; DataPemain.value[102] = 54000000;
