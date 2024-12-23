@@ -1,38 +1,110 @@
-#ifndef ADT_H_INCLUDED
-#define ADT_H_INCLUDED
-
-#include <iostream>
+#include "ADT.h"
 
 using namespace std;
 
-struct Players{
-    int ID[250]; //ID yang dimiliki tiap pemain. Ascending ke Atas
-    string nama[250];
-    string role[250]; // Posisi Pemain di lapangan
-    int Overall[250]; // Total perhitungan kekuatan pemain dari atribut-atribut dalam game. Detail tidak akan dijelaskan
-    int value[250]; // Harga Transfer suatu pemain dalam game
-};
+int main()
+{
+    Players data;
+    Players data_classified;
+    int N = 0; // Inisialisasi N
+    int n = 0; // Inisialisasi n
+    output result;
 
-struct output {
-    int Id; //ID yang dimiliki tiap pemain. Ascending ke Atas
-    string name;
-    int Harga;
-};
+    cout << "              |      |               \n";
+    cout << "-------------------------------------\n";
+    cout << "|                GK                  |\n";
+    cout << "|                                    |\n";
+    cout << "|     RB     CB        CB      LB    |\n";
+    cout << "|                                    |\n";
+    cout << "| RWB            CDM              LWB|\n";
+    cout << "|          CM           CM           |\n";
+    cout << "|                                    |\n";
+    cout << "|                                    |\n";
+    cout << "|     RM          CAM          LM    |\n";
+    cout << "|                                    |\n";
+    cout << "|     RW                       LW    |\n";
+    cout << "|                  CF                |\n";
+    cout << "|                                    |\n";
+    cout << "|                  ST                |\n";
+    cout << "--------------------------------------\n";
+    cout << endl;
 
-void ClassificationRole(Players &Class_position, int &j, Players DataPlayer, string position, int overall, int N);
+    cout << "Masukkan Jumlah data pemain yang ingin di-searching:\n";
+    cout << "1. 10 Pemain | 2. 100 Pemain | 3. 250 Pemain\n";
+    int Ndata;
+    cin >> Ndata;
 
-output SequentialSearchIterative(Players Dataplayer, string position, int Overall, int value, int N);
+    // Inisialisasi data pemain
+    switch (Ndata) {
+        case 1:
+            init_players_1(data);
+            N = 10;
+            break;
+        case 2:
+            init_players_1(data);
+            init_players_2(data);
+            N = 100;
+            break;
+        case 3:
+            init_players_1(data);
+            init_players_2(data);
+            init_players_3(data);
+            N = 250;
+            break;
+        default:
+            cout << "Pilihan tidak valid." << endl;
+            return 1; // Keluar dari program jika input tidak valid
+    }
 
-output binarysearchplayerIterative(Players Dataplayer, string position, int Overall, int value, int N);
+    // Input pencarian
+    string searchPosition;
+    int searchOverall, searchValue;
 
-output binarysearchplayerRecursive(Players Dataplayer, string position, int Overall, int value, int N, int low, int high);
+    cout << "-----------------------------------------------" << endl;
+    cout << "Masukkan posisi pemain yang dicari: ";
+    cin >> searchPosition;
 
-output SequentialSearchRecursive(Players Dataplayer, string position, int Overall, int value, int N, int i);
+    cout << "Masukkan overall pemain yang dicari (80-91): ";
+    cin >> searchOverall;
 
-void init_players_1(Players &DataPemain);
-void init_players_2(Players &DataPemain);
-void init_players_3(Players &DataPemain);
-void init_players_4(Players &DataPemain);
-void init_players_5(Players &DataPemain);
+    cout << "Masukkan nilai transfer pemain yang dicari (1-200jt dan Tidak boleh 0): \n";
+    cout << "Tulis harga dgn lengkap. (ex : 10000000)\n";
+    cin >> searchValue;
 
-#endif // ADT_H_INCLUDED
+    int PilihCara;
+    int PilihCara2;
+    cout << "Pilih cara mencari player (1.iteratif / 2.rekursif)" << endl;
+    cin >> PilihCara;
+    cout << "Pilih metode pencarian Player (1. sequential / 2. binary)" << endl;
+    cin >> PilihCara2;
+
+    if (PilihCara == 1) {
+        if (PilihCara2 == 1) {
+            ClassificationRole(data_classified, n, data, searchPosition, searchOverall, N);
+            result = SequentialSearchIterative(data_classified, searchPosition, searchOverall, searchValue, n);
+        } else {
+            ClassificationRole(data_classified, n, data, searchPosition, searchOverall, N);
+            result = binarysearchplayerIterative(data_classified, searchPosition, searchOverall, searchValue, n);
+        }
+    } else if (PilihCara == 2) {
+        if (PilihCara2 == 1) {
+            int i = 0;
+            ClassificationRole(data_classified, n, data, searchPosition , searchOverall, N);
+            result = SequentialSearchRecursive(data_classified, searchPosition, searchOverall, searchValue, n, i);
+        } else {
+            int i = 0;
+            ClassificationRole(data_classified, n, data, searchPosition, searchOverall, N);
+            result = binarysearchplayerRecursive(data_classified, searchPosition, searchOverall, searchValue, n, i, n - 1);
+        }
+    }
+
+    if (result.Id != -1) {
+        cout << "Pemain Rekomendasi: " << endl;
+        cout << "Nama Pemain: " << result.name << endl;
+        cout << "Harga Pemain: " << result.Harga << endl;
+    } else {
+        cout << "Pemain tidak ditemukan." << endl;
+    }
+
+    return 0;
+}
