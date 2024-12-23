@@ -19,19 +19,20 @@ struct output {
     int Harga;
 };
 
+//Prosedur Pengelompokkan pemain berdasarkan posisi dan overall
 void ClassificationRole(Players &Class_position, int &j, Players DataPlayer, string position, int overall, int N);
 
+//Fungsi pencarian nama pemain yang sesuai
 output SequentialSearchIterative(Players Dataplayer, string position, int Overall, int value, int N);
-
 output binarysearchplayerIterative(Players Dataplayer, string position, int Overall, int value, int N);
-
 output binarysearchplayerRecursive(Players Dataplayer, string position, int Overall, int value, int N, int low, int high);
-
 output SequentialSearchRecursive(Players Dataplayer, string position, int Overall, int value, int N, int i);
 
+//Prosedur pengisian Data Pemain
 void init_players_1(Players &DataPemain);
 void init_players_2(Players &DataPemain);
 void init_players_3(Players &DataPemain);
+void init_players_4(Players &DataPemain);
 
 
 #endif // ADT_H_INCLUDED
